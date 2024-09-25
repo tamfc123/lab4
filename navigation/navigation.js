@@ -7,6 +7,7 @@ import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import useAuth from '../hooks/useAuth';
+import ResetPassWordScreen from '../screens/ResetPassWordScreen';
 const Stack = createNativeStackNavigator();
 export default function Navigation() {
   const {user} = useAuth();
@@ -25,6 +26,7 @@ export default function Navigation() {
             <Stack.Screen name="Welcome" options={{headerShown: false}} component={WelcomeScreen} />
             <Stack.Screen name="Login" options={{headerShown: false}} component={LoginScreen} />
             <Stack.Screen name="SignUp" options={{headerShown: false}} component={SignUpScreen} />
+            <Stack.Screen name="ResetPassWord" options={{headerShown: false}} component={ResetPassWordScreen} />
           </Stack.Navigator>
       </NavigationContainer>
     )
